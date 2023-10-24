@@ -35,7 +35,7 @@ class mainScene {
       // Call the new hit() method
             this.hit();
         }
-        
+
       // This method is called 60 times per second after create() 
       // It will handle all the game's logic, like movements
 
@@ -67,7 +67,16 @@ class mainScene {
   
       // Display the updated score on the screen
         this.scoreText.setText('score: ' + this.score);
-  }
+
+      // Create a new tween 
+        this.tweens.add({
+            targets: this.player, // on the player 
+            duration: 200, // for 200ms 
+            scaleX: 1.2, // that scale vertically by 20% 
+            scaleY: 1.2, // and scale horizontally by 20% 
+            yoyo: true, // at the end, go back to original scale 
+        });
+    }
 }
 
   new Phaser.Game({
