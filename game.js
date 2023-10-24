@@ -30,6 +30,12 @@ class mainScene {
         this.arrow = this.input.keyboard.createCursorKeys();
     }
     update() {
+      // If the player is overlapping with the coin
+        if (this.physics.overlap(this.player, this.coin)) {
+      // Call the new hit() method
+            this.hit();
+        }
+        
       // This method is called 60 times per second after create() 
       // It will handle all the game's logic, like movements
 
