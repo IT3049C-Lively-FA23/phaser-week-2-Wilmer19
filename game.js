@@ -7,12 +7,14 @@ class mainScene {
       // It will load all the assets, like sprites and sounds 
       // Parameters: name of the sprite, path of the image
         this.load.image('player', 'assets/player.png'); 
+        this.load.image('coin', 'assets/coin.png');
     }
     create() {
       // This method is called once, just after preload()
       // It will initialize our scene, like the positions of the sprites
       // Parameters: x position, y position, name of the sprite
         this.player = this.physics.add.sprite(100, 100, 'player');
+        this.coin = this.physics.add.sprite(300, 300, 'coin');
     }
     update() {
       // This method is called 60 times per second after create() 
