@@ -32,6 +32,22 @@ class mainScene {
     update() {
       // This method is called 60 times per second after create() 
       // It will handle all the game's logic, like movements
+
+      // Handle horizontal movements
+        if (this.arrow.right.isDown) {
+      // If the right arrow is pressed, move to the right
+            this.player.x += 3;
+        } else if (this.arrow.left.isDown) {
+      // If the left arrow is pressed, move to the left
+            this.player.x -= 3;
+        } 
+  
+      // Do the same for vertical movements
+        if (this.arrow.down.isDown) {
+            this.player.y += 3;
+        } else if (this.arrow.up.isDown) {
+            this.player.y -= 3;
+        } 
     }
   }
 
