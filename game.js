@@ -26,6 +26,8 @@ class mainScene {
       // Display the score in the top left corner
       // Parameters: x position, y position, text, style
         this.scoreText = this.add.text(20, 20, 'score: ' + this.score, style);
+
+        this.arrow = this.input.keyboard.createCursorKeys();
     }
     update() {
       // This method is called 60 times per second after create() 
