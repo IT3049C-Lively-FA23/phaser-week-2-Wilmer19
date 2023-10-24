@@ -6,15 +6,22 @@ Phaser Tutorial 2
 Instructions to this assignment can be found [here](https://uc.instructure.com/courses/1641850/assignments/20048180).
 
 ## Checklist:
-- [ ] update the assignment checks above to the correct link
-- [ ] make sure the assignment checks pass
-- [ ] fill out the self evaluation and Reflection
-- [ ] submit the repository link on Canvas
+- [X] update the assignment checks above to the correct link
+- [X] make sure the assignment checks pass
+- [X] fill out the self evaluation and Reflection
+- [X] submit the repository link on Canvas
 
 ## Self-Evaluation:
 
 how many points out of 20 do you deserve on this assignment:
+I believe I deserve a 20/20 because I followed along with the tutorial and my game is working. The only issue 
+I ran into was that the original assets were not available. This sparked an idea and I decided to change 
+the theme of the game. It's the same concept but now it's a dog playing fetch. I changed the background
+color to green, changed the title to "Fetch" and used spirte images of a dog and tennis ball.
 
 ## Self-Reflection:
+Even though I created a game using a tutorial, I'm proud that I made it unique. The game is 
+very simple but I believe any animal lover would appericiate playing it. 
 
 ### How long it took me to finish this?
+1 hour
