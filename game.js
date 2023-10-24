@@ -49,7 +49,20 @@ class mainScene {
             this.player.y -= 3;
         } 
     }
+  
+
+    hit() {
+      // Change the position x and y of the coin randomly
+        this.coin.x = Phaser.Math.Between(100, 600);
+        this.coin.y = Phaser.Math.Between(100, 300);
+  
+      // Increment the score by 10
+        this.score += 10;
+  
+      // Display the updated score on the screen
+        this.scoreText.setText('score: ' + this.score);
   }
+}
 
   new Phaser.Game({
     width: 700, // Width of the game in pixels
