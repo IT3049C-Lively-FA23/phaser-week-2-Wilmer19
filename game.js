@@ -15,6 +15,17 @@ class mainScene {
       // Parameters: x position, y position, name of the sprite
         this.player = this.physics.add.sprite(100, 100, 'player');
         this.coin = this.physics.add.sprite(300, 300, 'coin');
+
+      // Store the score in a variable, initialized at 0
+        this.score = 0;
+
+      // The style of the text 
+      // A lot of options are available, these are the most important ones
+        let style = { font: '20px Arial', fill: '#fff' };
+
+      // Display the score in the top left corner
+      // Parameters: x position, y position, text, style
+        this.scoreText = this.add.text(20, 20, 'score: ' + this.score, style);
     }
     update() {
       // This method is called 60 times per second after create() 
